@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="images/fav.webp" type="image/x-icon">
+
+    <!-- font family  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+        /* .heading-name {
+            font-family: "Sofia", sans-serif;
+        } */
+    </style>
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="container navbar navbar-expand-lg bg-light mt-5 ">
+            <div class="container-fluid">
+                <h1 class="text-info"> Daily Blog</h1>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto mx-3">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <hr class="container my-5">
+        <section class="container">
+            <h1 class="text-center my-5 text-success fs-1">Questions</h1>
+        </section>
+    </header>
+
+    <main>
+        <section class="container">
+            <div>
+                <h3>1. Difference between local storage and session storage ?</h3>
+                <div>
+                    <h5>Answer:</h5>
+
+
+                    <p>
+                        <span class="fw-bold">The one major difference between local Storage and session Storage is the
+                            expiration date.</span> <br>
+
+                        <span class="fw-bold">Local Storage</span> persists the storage across browser sessions. So even
+                        if the domain is opened in a new tab, or the browser is closed and reopened, the storage is
+                        saved. There is no expiration. <br>
+
+                        <span class="fw-bold">Session Storage</span> is cleared when the page session ends. A page
+                        session lasts as long as the tab or the browser is open. Therefore, when you open a new tab or a
+                        new window, this creates a new session and new storage.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>2. Difference between global scope and block scope ?</h3>
+                <h5>Answer:</h5>
+
+                <p>
+                    <span class="fw-bold">Global Scope</span>
+                    Variables declared Globally (outside any function) have Global Scope.
+                    Global variables can be accessed from anywhere in a JavaScript program.
+                    Variables declared with var, let and const are quite similar when declared outside a block.
+                    They all have Global Scope. <br>
+                    <span class="fw-bold">Block Scope:</span> This scope restricts the variable that is declared inside
+                    a specific block, from access by the outside of the block. The let & const keyword facilitates the
+                    variables to be block scoped. In order to access the variables of that specific block, we need to
+                    create an object for it. Variables declared with the var keyword, do not have block scope.
+                </p>
+            </div>
+            <div>
+                <h3>3. How does work js event loop ?</h3>
+                <h5>Answer:</h5>
+                <p>
+                    The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call
+                    Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call
+                    Stack, which effectively runs it. <br>
+
+                    <span class="fw-bold">In another words</span><br>
+                    The event loop is a mechanism that allows JavaScript to perform non-blocking operations. When an
+                    asynchronous task is started, the event loop will start running. Once the task is completed, the
+                    event loop will again check for any other tasks that need to be performed. This process will
+                    continue until all tasks have been completed.
+                </p>
+            </div>
+            <div>
+                <h3>How many way we got undefined ?</h3>
+                <h5>Answer:</h5>
+
+
+                <p>
+                    1. When you declare a variable and don’t initialize it to a value, the variable will have a value of
+                    undefined. <br>
+                    2. If you access a non-existing property of an object, you’ll get undefined. <br>
+                    3. When you call a function with a number of parameters, you often pass the same number of
+                    arguments.
+                    If the function has two parameters. When calling it, you can pass two arguments
+                    But when you call the function and don’t pass all the arguments, the parameters inside the function
+                    becomes undefined. <br>
+                    4. A function that doesn’t have a return statement implicitly returns undefined, <br>
+                    Likewise, when a function has a return statement without an expression, it also returns undefined
+                    5. When you access an array element that is out-of-bounds, you’ll get the undefined value.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h6 class="text-center text-black-50 my-5">Copyright 2022 Daily Blog</h6>
+    </footer>
+</body>
+
+</html>
