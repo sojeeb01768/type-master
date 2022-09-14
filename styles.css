@@ -18,8 +18,12 @@ body {
 
 .blog{
   text-align: end;
-  font-size: large
-  margin
+  font-size: 30px;
+  margin:50px;
+  
+}
+.heading-text{
+  color: white;
 }
 
 .box-container {
